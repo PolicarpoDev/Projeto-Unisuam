@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livros Gratuitos</title>
+    <link rel="stylesheet" href="livrosgratuitos.css">
+    <script>
+        function mostrarDescricao(btn) {
+            var descricaoCurta = btn.previousElementSibling; 
+            var descricaoLonga = descricaoCurta.nextElementSibling; 
+            descricaoLonga.style.display = 'block'; 
+            descricaoCurta.style.display = 'none'; 
+            btn.style.display = 'none'; 
+        }
+    </script>
+</head>
+
+<body>
+    
+    <nav class="nav-bar">
+        <div class="left-content">
+            <a href="/Principal/principal.html"><img class="logo" src="/Professores/IMG/logo1.png" alt=""></a>
+        </div>
+        <div  class="right-content">
+                <a href="/Professores/professores.html" class="btn"><span class="spn2">Professores</span></a>
+                <a href="/Livros Gratuitos/livrosgratuitos.html" class="btn"><span class="spn2">Livros Gratuitos</span></a>
+                <a href="/Catálogo de livros/catalogo.html" class="btn"><span class="spn2">Catálogo de livros</span></a>
+        </div>
+    </nav>
+    
+    
+    
+    <header>
+        <h1>Livros Gratuitos</h1>
+    </header>
+    <main>
+        <section class="book-list">
+            <!-- Livro 1 -->
+            <article class="book">
+                <img src="/Livros Gratuitos/Imagens/direitocivil.jpeg" alt="Capa do Livro 1">
+                <h2>Manual de Direito Civil - Vol. Único Capa comum – 31 janeiro 2024</h2>
+                <p>Autor: Flávio Tartuce</p>
+                <p>Gênero: Direito</p>
+                <p class="descricao-curta">
+                    Este Manual de Direito Civil pretende, desde a sua primeira edição, suprir as necessidades dos
+                    operadores do Direito Privado em geral.
+                </p>
+                <p class="descricao-longa">
+                    Este Manual de Direito Civil pretende, desde a sua primeira edição, suprir as necessidades dos
+                    operadores do Direito Privado em geral. É direcionado a todos os seus aplicadores: juízes,
+                    promotores, procuradores, advogados, professores, alunos de graduação e de pós-graduação, bem como
+                    àqueles que se preparam para provas oficiais e concursos para a carreira jurídica...
+                </p>
+                <button class="ler-mais" onclick="mostrarDescricao(this)">Ler mais</button>
+            </article>
+            <!-- Livro 2 -->
+            <article class="book">
+                <img src="/Livros Gratuitos/Imagens/desenvolvimentohumano.jpeg" alt="Desenvolvimento humano Capa comum – 12 novembro 2021">
+                <h2>Desenvolvimento humano Capa comum – 12 novembro 2021</h2>
+                <p>Autor: Diane E. Papalia (Autor), Gabriela Martorell (Autor), Francisco Araújo da Costa (Tradutor),
+                    Odette de Godoy Pinheiro Patricia Santos da Silva</p>
+                <p>Gênero: Psicologia</p>
+                <p class="descricao-curta">
+                    O livro clássico de Papalia e Martorell, Desenvolvimento humano, chega à sua 14ª edição apresentando
+                    conteúdos atualizados que permitem aos estudantes uma compreensão ampla da experiência humana em
+                    toda sua complexidade e diversidade.
+                </p>
+                <p class="descricao-longa">
+                    O livro clássico de Papalia e Martorell, Desenvolvimento humano, chega à sua 14ª edição apresentando
+                    conteúdos atualizados que permitem aos estudantes uma compreensão ampla da experiência humana em
+                    toda sua complexidade e diversidade.
+
+                    A partir de uma abordagem cronológica, o livro, também disponível no formato e-book, acompanha todas
+                    as fases do desenvolvimento, desde a formação de uma nova vida até o momento da morte. Para cada
+                    etapa, são apresentados dados tanto sobre o desenvolvimento físico e cognitivo quanto sobre o
+                    desenvolvimento psicossocial.
+
+                    Sua já consagrada abordagem didática inclui recursos que guiam a leitura e reforçam a aprendizagem,
+                    como Pontos principais, Objetivos de aprendizagem, Verificadores “Você é capaz de…”, Resumos e
+                    Palavras-chave. Além disso, inclui as seções Janela para o Mundo, que possibilitam uma visão de
+                    diferentes tópicos sob
+
+                    uma perspectiva cultural (p. ex., cuidados pré-natais, brigas entre irmãos, relação entre cultura e
+                    cognição, uso da internet, estereótipos sobre o envelhecimento, cuidado com os idosos, rituais
+                    fúnebres, entre outros), e Pesquisa em Ação, que trazem dados recentes sobre temas atuais, como o
+                    uso de telas por bebês e crianças pequenas, novos conhecimentos sobre autismo, adolescência e o
+                    fenômeno multitarefa, violência nas relações íntimas, mudanças de carreira na meia-idade, abuso
+                    contra idosos, suicídio assistido, entre outros.
+                </p>
+                <button class="ler-mais" onclick="mostrarDescricao(this)">Ler mais</button>
+            </article>
+            <!-- Livro 3 -->
+            <article class="book">
+                <img src="/Livros Gratuitos/Imagens/anatomia humana.jpeg" alt="Capa do Livro 3">
+                <h2>Netter - Atlas de Anatomia Humana 7ed Capa comum – 8 dezembro 2018</h2>
+                <p>Autor: Frank H. Netter.</p>
+                <p>Gênero: Medicina Inter Profissional e Técnico.</p>
+                <p class="descricao-curta">
+                    O único atlas de Anatomia ilustrado por médicos.
+                </p>
+                <p class="descricao-longa">
+                    O único atlas de Anatomia ilustrado por médicos. Com quase 100 ilustrações e atualizado a partir das
+                    solicitações de estudantes e profissionais, Netter Atlas de Anatomia Humana traz visões aprimoradas
+                    e claras do corpo humano com uma perspectiva clínica. Novidades: Nova seção Visão Geral dos
+                    Sistemas, inteiro da anatomia da superfície, vasos, nervos e vasos linfáticos; Mais de 25 novas
+                    ilustrações do Carlos A. G. Machado, incluindo as lâminas fasciais clinicamente importantes do
+                    pescoço, veias profundas da perna, bolsas do quadril, vasculatura da próstata e áreas de difícil
+                    visualização, como a fossa infratemporal; Ao final de cada seção, novas Tabelas de Músculos com
+                    resumos rápidos, organizados por sistema de corpo e indicam onde visualizar melhor as principais
+                    estruturas nas placas ilustradas; Mais de 50 novas imagens radiológicas; Terminologia atualizada
+                    baseada no padrão anatômico internacional, Terminologia Anatômica, incluindo epônimos clínicos
+                    comuns; Conteúdo online com perguntas e respostas, animações e outros itens no Student Consult em
+                    português.
+                </p>
+                <button class="ler-mais" onclick="mostrarDescricao(this)">Ler mais</button>
+            </article>
+            <!-- Livro 4 -->
+            <article class="book">
+                <img src="/Livros Gratuitos/Imagens/homemrico.jpeg" alt="Capa do Livro 4">
+                <h2>O homem mais rico da Babilônia Capa comum – Edição padrão, 4 agosto 2017</h2>
+                <p>Autor: George S Clason (Autor), Luiz Cavalcanti de M. Guerra (Tradutor)</p>
+                <p>Gênero: Administração</p>
+                <p class="descricao-curta">
+                    Com mais de dois milhões de exemplares vendidos no mundo todo, O homem mais rico da Babilônia é um
+                    clássico sobre como multiplicar riqueza e solucionar problemas financeiros.
+                </p>
+                <p class="descricao-longa">
+                    Com mais de dois milhões de exemplares vendidos no mundo todo, O homem mais rico da Babilônia é um
+                    clássico sobre como multiplicar riqueza e solucionar problemas financeiros. Baseando-se nos segredos
+                    de sucesso dos antigos babilônicos ― os habitantes da cidade mais rica e próspera de seu tempo ―,
+                    George S. Clason mostra soluções ao mesmo tempo sábias e muito atuais para evitar a falta de
+                    dinheiro, como não desperdiçar recursos durante tempos de opulência, buscar conhecimento e
+                    informação em vez de apenas lucro, assegurar uma renda para o futuro, manter a pontualidade no
+                    pagamento de dívidas e, sobretudo, cultivar as próprias aptidões, tornando-se cada vez mais
+                    habilidoso e consciente.
+                </p>
+                <button class="ler-mais" onclick="mostrarDescricao(this)">Ler mais</button>
+            </article>
+            <!-- Livro 5 -->
+            <article class="book">
+                <img src="/Livros Gratuitos/Imagens/logicaconsumo.jpeg" alt="Capa do Livro 5">
+                <h2>A lógica do consumo - Verdades e mentiras sobre por que compramos Capa comum – 11 janeiro 2018</h2>
+                <p>Autor: Martin Lindstrom</p>
+                <p>Gênero: Marketing</p>
+                <p class="descricao-curta">
+                    Em 'A Lógica do Consumo', Martin Lindstrom procura apresentar ao leitor os bastidores das pesquisas
+                    que explicam por que determinado produto vende e mostra como o cérebro das pessoas responde aos
+                    muitos estímulos da propaganda.
+                </p>
+                <p class="descricao-longa">
+                    Em 'A Lógica do Consumo', Martin Lindstrom procura apresentar ao leitor os bastidores das pesquisas
+                    que explicam por que determinado produto vende e mostra como o cérebro das pessoas responde aos
+                    muitos estímulos da propaganda. O autor apresenta casos reais de estudos de neuromarketing para
+                    desfazer mitos como, por exemplo, o impacto do sexo na mente do consumidor.
+                </p>
+                <button class="ler-mais" onclick="mostrarDescricao(this)">Ler mais</button>
+            </article>
+            <!-- Livro 6 -->
+            <article class="book">
+                <img src="/Livros Gratuitos/Imagens/economiabrasileira.jpeg" alt="Capa do Livro 6">
+                <h2>Economia Brasileira Contemporânea: (1945-2015) Capa comum – 5 julho 2016</h2>
+                <p>Autor: Fabio Giambiagi</p>
+                <p>Gênero: Economia</p>
+                <p class="descricao-curta">
+                    Os diferentes regimes políticos, a construção de instituições, os variados enfoques de políticas
+                    econômicas e sociais, as crises geradas endogenamente ou importadas da economia mundial, moldaram
+                    historicamente o que hoje constituem a economia e a sociedade brasileiras.
+                </p>
+                 <p class="descricao-longa">
+                    Os diferentes regimes políticos, a construção de instituições, os variados enfoques de políticas
+                    econômicas e sociais, as crises geradas endogenamente ou importadas da economia mundial, moldaram
+                    historicamente o que hoje constituem a economia e a sociedade brasileiras. Neste livro, o autor
+                    percorre justamente esse caminho, destacando elementos relevantes da economia e da sociedade
+                    brasileiras do período em análise. A leitura deste livro pode ser útil para a compreensão das
+                    características e dos problemas do Brasil contemporâneo, bem como para a formação de profissionais
+                    que atuam na área pública e privada do país.
+                    </p>
+                    <button class="ler-mais" onclick="mostrarDescricao(this)">Ler mais</button>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Catálogo de Livros</p>
+    </footer>
+</body>
+
+</html>
+```
+

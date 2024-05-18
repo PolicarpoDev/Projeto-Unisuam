@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de livros</title>
+    <link rel="stylesheet" href="./catalogo.css">
+</head>
+
+<body>
+    <nav class="nav-bar">
+        <div class="left-content">
+            <a href="/Principal/principal.html"><img class="logo" src="/Professores/IMG/logo1.png" alt=""></a>
+        </div>
+        <div  class="right-content">
+                <a href="/Professores/professores.html" class="btn"><span class="spn2">Professores</span></a>
+                <a href="/Livros Gratuitos/livrosgratuitos.html" class="btn"><span class="spn2">Livros Gratuitos</span></a>
+                <a href="/Catálogo de livros/catalogo.html" class="btn"><span class="spn2">Catálogo de livros</span></a>
+        </div>
+    </nav>
+
+    <header>
+        <h1>
+            Catálogo de Livros
+            <div class="cart-icon" onclick="toggleCart()">
+                <img src="./assets/carrinho de compras.png" alt="carrinho de compras">
+                <div class="item-count">0</div>
+                <div class="cart-items">
+                    <ul>
+                       
+                    </ul>
+                    <div class="cart-total">Total: R$ <span id="cart-total">0.00</span></div>
+                </div>
+            </div>
+        </h1>
+    </header>
+
+    <section class="cart-preview">
+        <h2>Produtos no Carrinho</h2>
+        <div class="cart-items-preview"></div>
+        <div class="cart-total-preview">Total: R$ <span id="total-preview">0.00</span></div>
+        <div class="payment-options">
+            <button id="paypal-button">Pagar com PayPal</button>
+            <button id="credit-card-button">Pagar com Cartão de Crédito</button>
+            <button id="pix-button">Pagar com PIX</button>
+            <button id="boleto-button">Pagar com Boleto Bancário</button>
+        </div>
+    </section>
+
+    <div class="books-container">
+        <div class="book">
+            <p>
+                <strong>Introdução à Programação em C</strong>
+                <br />
+                <small><em>Conceitos Fundamentais e Resolução de Problemas</em></small>
+            </p>
+            <img width="120" src="https://m.media-amazon.com/images/I/51fqiJy+VgL._SY445_SX342_.jpg" alt="Livro 7">
+            <p>
+                <small>de <del>R$ 65,00</del></small><br>
+                por <strong><small>R$</small> 54,99</strong>
+            </p>
+            <button class="buy-button" data-title="Introdução à Programação em C" data-price="54.99"><span>COMPRAR</span></button>
+        </div>
+        
+        <div class="book">
+            <p>
+                <strong>Python Fluente</strong>
+                <br />
+                <small><em>Programação Clara, Concisa e Eficaz</em></small>
+            </p>
+            <img width="120" src="https://m.media-amazon.com/images/I/51Ov4P3XiEL._SY445_SX342_.jpg" alt="Livro 8">
+            <p>
+                <small>de <del>R$ 89,90</del></small><br>
+                por <strong><small>R$</small> 76,45</strong>
+            </p>
+            <button class="buy-button" data-title="Python Fluente" data-price="76.45"><span>COMPRAR</span></button>
+        </div>
+        
+        <div class="book">
+            <p>
+                <strong>JavaScript: O Guia Definitivo</strong>
+                <br />
+                <small><em>O Guia Mais Completo para Programação JavaScript Moderna</em></small>
+            </p>
+            <img width="120" src="https://m.media-amazon.com/images/I/41Mj94QmgtL._SY445_SX342_.jpg" alt="Livro 9">
+            <p>
+                <small>de <del>R$ 120,00</del></small><br>
+                por <strong><small>R$</small> 99,99</strong>
+            </p>
+            <button class="buy-button" data-title="JavaScript: O Guia Definitivo" data-price="99.99"><span>COMPRAR</span></button>
+        </div>
+        
+        <div class="book">
+            <p>
+                <strong>Fundamentos de tecnologia da informação</strong>
+                <br />
+                <small><em>Fundamentos de tecnologia da informação e análise de sistemas para não analistas</em></small>
+            </p>
+            <img width="120" src="https://m.media-amazon.com/images/I/71SCjB4Dm9L._SL1466_.jpg" alt="Livro 1">
+            <p>
+                <small>de <del>R$ 49,90</del></small><br>
+                por <strong><small>R$</small> 37,43</strong>
+            </p>
+            <button class="buy-button" data-title="Fundamentos de tecnologia da informação" data-price="37.43"><span>COMPRAR</span></button>
+        </div>
+
+        <div class="book">
+            <p>
+                <strong>Algoritmos e Lógica da Programação</strong>
+                <br />
+                <small><em>Com linguagem simples e didática – sem, no entanto, fugir da complexidade do assunto –</em></small>
+            </p>
+            <img width="120" src="https://m.media-amazon.com/images/I/6181C8xqUPL._SL1008_.jpg" alt="Livro 2">
+            <p>
+                <small>de <del>R$ 83,90</del></small><br>
+                por <strong><small>R$</small> 58,73</strong>
+            </p>
+            <button class="buy-button" data-title="Algoritmos e Lógica da Programação" data-price="58.73"><span>COMPRAR</span></button>
+        </div>
+
+        <div class="book">
+            <p>
+                <strong>Análise de Sistemas</strong><br>
+                <small><em>10 Habilidades Fundamentais</em></small>
+            </p>
+            <img width="120" src="https://m.media-amazon.com/images/I/61KMR-UykvL._SL1358_.jpg" alt="Livro 3">
+            <p>
+                <small>de <del>R$ 55,00</del></small><br>
+                por <strong><small>R$</small> 42,65</strong>
+            </p>
+            <button class="buy-button" data-title="Análise de Sistemas" data-price="42.65"><span>COMPRAR</span></button>
+        </div>
+
+        <div class="book">
+            <p>
+                <strong>Lógica de programação</strong>
+                <br />
+                <small><em>A construção de algoritmos e estruturas de dados com aplicações em Python</em></small>
+            </p>
+            <img width="120" src="https://m.media-amazon.com/images/I/71iXxChqvyL._SL1500_.jpg" alt="Livro 4">
+            <p>
+                <small>de <del>R$ 98,00</del></small><br>
+                por <strong><small>R$</small> 68,60</strong>
+            </p>
+            <button class="buy-button" data-title="Lógica de programação" data-price="68.60"><span>COMPRAR</span></button>
+        </div>
+
+        <div class="book">
+            <p>
+                <strong>Pense em Python</strong>
+                <br />
+                <small><em>Pense Como um Cientista da Computação</em></small>
+            </p>
+            <img width="120" src="https://m.media-amazon.com/images/I/71CMylJf8qL._SL1297_.jpg" alt="Livro 5">
+            <p>
+                <small>de <del>R$ 95,00</del></small><br>
+                por <strong><small>R$</small> 82,76</strong>
+            </p>
+            <button class="buy-button" data-title="Pense em Python" data-price="82.76"><span>COMPRAR</span></button>
+        </div>
+
+        <div class="book">
+            <p>
+                <strong>Lógica de Programação e Algoritmos com JavaScript</strong>
+                <br />
+                <small><em>Uma Introdução à Programação de Computadores com Exemplos</em></small>
+            </p>
+            <img width="120" src="https://m.media-amazon.com/images/I/71X7hMhMEUL._SL1500_.jpg" alt="Livro 6">
+            <p>
+                <small>de <del>R$ 89,00</del></small><br>
+                por <strong><small>R$</small> 78,50</strong>
+            </p>
+            <button class="buy-button" data-title="Lógica de Programação e Algoritmos com JavaScript" data-price="58.73"><span>COMPRAR</span></button>
+        </div>
+
+       
+    </div>
+
+    <div id="credit-card-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Preencha as informações do Cartão de Crédito!</h2>
+            <form id="credit-card-form">
+                <label for="card-number">Número do Cartão:</label>
+                <input type="text" id="card-number" name="card-number" required><br><br>
+                <label for="card-name">Nome no Cartão:</label>
+                <input type="text" id="card-name" name="card-name" required><br><br>
+                <label for="expiry-date">Data de Validade:</label>
+                <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/AA" required><br><br>
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv" required><br><br>
+                <button type="submit">Pagar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://www.paypal.com/sdk/js?client-id=suaClientId"></script>
+
+    <script>
+        
+        document.addEventListener("DOMContentLoaded", function () {
+            const books = document.querySelectorAll('.book');
+            const cartItemsPreview = document.querySelector('.cart-items-preview');
+            let total = 0;
+
+            books.forEach(book => {
+                const buyButton = book.querySelector('.buy-button');
+                buyButton.addEventListener('click', () => {
+                    const bookTitle = buyButton.getAttribute('data-title');
+                    const bookPrice = parseFloat(buyButton.getAttribute('data-price'));
+                    total += bookPrice;
+                    const cartItem = document.createElement('div');
+                    cartItem.classList.add('cart-item');
+                    cartItem.innerHTML = `
+                        <p>${bookTitle} - R$ ${bookPrice.toFixed(2)}</p>
+                    `;
+                    cartItemsPreview.appendChild(cartItem);
+                    document.getElementById('total-preview').textContent = total.toFixed(2);
+
+                    const cartItemCount = document.querySelectorAll('.cart-item').length;
+                    document.querySelector('.item-count').textContent = cartItemCount;
+                });
+            });
+
+            const cartIcon = document.querySelector('.cart-icon');
+            const cartPreview = document.querySelector('.cart-preview');
+            cartIcon.addEventListener('click', (event) => {
+                if (cartPreview.style.display === 'block') {
+                    cartPreview.style.display = 'none';
+                } else {
+                    cartPreview.style.display = 'block';
+                }
+                event.stopPropagation();
+            });
+
+            document.addEventListener('click', (event) => {
+                if (!event.target.closest('.cart-container')) {
+                    cartPreview.style.display = 'none';
+                }
+            });
+
+            const paypalButton = document.getElementById('paypal-button');
+            const creditCardButton = document.getElementById('credit-card-button');
+            const pixButton = document.getElementById('pix-button');
+            const boletoButton = document.getElementById('boleto-button');
+
+            paypalButton.addEventListener('click', () => {
+                alert('Pagamento com PayPal realizado com sucesso!');
+                clearCart();
+            });
+
+            creditCardButton.addEventListener('click', () => {
+                document.getElementById('credit-card-modal').style.display = 'block';
+            });
+
+            pixButton.addEventListener('click', () => {
+                alert('Pagamento com PIX realizado com sucesso!');
+                clearCart();
+            });
+
+            boletoButton.addEventListener('click', () => {
+                alert('Boleto bancário gerado com sucesso!');
+                clearCart();
+            });
+
+            function clearCart() {
+                cartItemsPreview.innerHTML = '';
+                total = 0;
+                document.getElementById('total-preview').textContent = total.toFixed(2);
+                document.querySelector('.item-count').textContent = '0';
+            }
+
+            
+            document.querySelector('#credit-card-modal .close').addEventListener('click', () => {
+                document.getElementById('credit-card-modal').style.display = 'none';
+            });
+
+            
+            window.addEventListener('click', (event) => {
+                const modal = document.getElementById('credit-card-modal');
+                if (event.target === modal) {
+                    modal.style.display = 'none';
+                }
+            });
+
+            
+            document.getElementById('credit-card-form').addEventListener('submit', (event) => {
+                event.preventDefault();
+                const formData = new FormData(event.target);
+                const cardNumber = formData.get('card-number');
+                const cardName = formData.get('card-name');
+                const expiryDate = formData.get('expiry-date');
+                const cvv = formData.get('cvv');
+
+               
+
+                alert('Pagamento com Cartão de Crédito realizado com sucesso!');
+                clearCart();
+                document.getElementById('credit-card-modal').style.display = 'none';
+            });
+        });
+    </script>
+
+</body>
+
+</html>

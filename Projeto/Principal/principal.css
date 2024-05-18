@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+
+body {
+    background-color: #525a61;
+}
+
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px, 20px;
+    background-color: #223;
+    position: sticky;
+    width: 100%;
+}
+
+.left-content{
+    display: flex;
+    margin: 16px;
+    margin-left: 48px;
+}
+
+.right-content{
+    display: flex;
+    gap: 32px;
+    margin: 16px;
+    margin-right: 48px
+}
+
+.logo{
+    width: 80%;
+    height: 85%;
+}
+
+.btn {
+    font-size: 17px;
+    background: transparent;
+    padding: 1em 1.5em;
+    color: rgb(255, 255, 255);
+    position: relative;
+    transition: 0.5s ease;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .btn::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0;
+    width: 0;
+    background-color: #fff;
+    transition: 0.5s ease;
+  }
+  
+  .btn:hover {
+    transition-delay: 0.5s;
+  }
+  
+  .btn:hover::before {
+    width: 0% ;
+  }
+  
+  .btn::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 6px;
+    height: 0;
+    width: 3px;
+    background-color: #fff;
+    transition: 0.4s ease;
+    z-index: -1;
+  }
+  
+  .btn:hover::after {
+    height: 2px;
+    width: 100%;
+    transition-delay: 0.4s;
+    color: rgb(0, 0, 0);
+  }
+
+
+ /* wrapper1 */
+
+ .bgWrapper{ 
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  width: 100vw;
+  height: 80vh;
+  background-image: url(/Principal/Imagens/bgwrapper1.jpg);
+ }
+
+ .text-box{
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  height: 60vh;
+  font-size: 2rem;
+ }
+
+ .tittle{
+  background-color: rgba(0, 0, 0, 0.44);
+  padding: 16px 32px;
+  margin: 16px 32px;
+  border-radius: 32px;
+  font-size: xx-large;
+  color: white;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+ }
+
+ .paragraph{
+    margin: 32px;
+    font-size: medium;
+    text-transform: none;
+    color: white;
+    display: block;
+  }
+
+  /* wrapper */
+
+  .footer{
+    background-color: #223;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+  }
+
+  .span-wrapper{
+    margin: 1rem;
+    height: 10vh;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    color: white;
+ }
